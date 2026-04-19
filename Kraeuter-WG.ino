@@ -2484,7 +2484,7 @@ void setup() {
   server.begin();
 
   ArduinoOTA.setHostname("Kraeuter-WG-ESP32");
-  ArduinoOTA.setPassword("AutGardener!");
+  ArduinoOTA.setPassword("Kraeuter-WG!");
   ArduinoOTA.begin();
 }
 
