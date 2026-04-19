@@ -73,8 +73,22 @@ To build your own Kraeuter-WG, you need:
    ```bash
    git clone https://github.com/austrianflame/kraeuter-wg.git
    
-2. Flash the ESP32:
-  Open the Kraeuter-WG.ino file in the Arduino IDE or your preferred environment, ensure you have the necessary WiFi/Webserver libraries installed, and flash it to your board. (No LittleFS data     upload required via Arduino IDE, the core UI is contained in one file!)
+2. Download the Required Libaries and Flash the ESP32:
+
+   📚 Required Libraries
+   Before compiling, please install the following libraries via the Arduino IDE Library Manager:
+
+   * **WiFiManager** by tzapu
+   * **Adafruit GFX Library** by Adafruit
+   * **Adafruit SSD1306** by Adafruit
+   * **DHT sensor library** by Adafruit *(make sure to also install the Adafruit Unified Sensor dependency)*
+   * **PCF8574** by Rob Tillaart
+   * **ArduinoJson** by Benoit Blanchon
+   * **PubSubClient** by Nick O'Leary
+
+   *(Note: All other included libraries like LittleFS, ESPmDNS, or esp_now are part of the standard ESP32 core and do not need to be downloaded separately.)*
+
+   Open the Kraeuter-WG.ino file in the Arduino IDE or your preferred environment, ensure you have the necessary WiFi/Webserver libraries installed, and flash it to your board. (No LittleFS data     upload required via Arduino IDE, the core UI is contained in one file!)
 
 4. Connect to the Network (Captive Portal):
   Power up the ESP32. On the very first boot, it opens its own WiFi Access Point. Connect to it, configure your local WiFi credentials, and then access the assigned IP address in your local         browser.
