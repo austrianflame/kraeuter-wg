@@ -2671,7 +2671,7 @@ void handleHubCode() {
   code += "  tft.setTextColor(TFT_WHITE); tft.setCursor(10, 130); tft.println(\"" + t("Warte auf Sensordaten...", "Waiting for sensor data...") + "\");\n\n";
   
   code += "  ArduinoOTA.setHostname(\"Kraeuter-WG-Display\");\n";
-  code += "  ArduinoOTA.setPassword(\"AutGardener!\");\n";
+  code += "  ArduinoOTA.setPassword(\"Kraeuter-WG!\");\n";
   code += "  ArduinoOTA.begin();\n\n";
   
   code += "  if (esp_now_init() == ESP_OK) esp_now_register_recv_cb(OnDataRecv);\n";
