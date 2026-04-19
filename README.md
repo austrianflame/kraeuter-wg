@@ -102,6 +102,12 @@ To build your own Kraeuter-WG, you need:
 
 7. 📁 Update Plant Database (plants.js)
    The system uses an external file called plants.js for the plant database. Why? So you can easily swap or update the list! If the community releases a new version or you want to add your own       varieties, simply upload the new file at the very bottom of the Plant Settings in the Web UI. The old list will automatically be replaced by the new one.
+
+   
+📡 Over-The-Air (OTA) Updates
+This project supports OTA updates via ArduinoOTA. This means you don't need to connect the ESP32 via USB to flash a new version of the code – you can do it directly over your WiFi network!
+* **OTA Password:** "Kraeuter-WG!"
+*(Make sure to change this password in the `.ino` file if you are running this on a public or unsecure network!)*
 ---
 
 ⚖️ License & Copyright
