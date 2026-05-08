@@ -1,7 +1,9 @@
-# 🌿 Kräuter-WG - ESP32 Smart Garden
+# 🌿 Kräuter-WG/Kraeuter-WG - ESP32 Smart Garden System
 **Developed by Austrian Flame (with Gemini)**
 
-Transform your indoor plants into a fully automated smart garden. The **Kräuter-WG** is an open-source, ESP32-based IoT solution that monitors soil moisture and handles the watering for you—no coding skills required.
+ESP32 Smart Garden System for automated plant watering and real-time soil moisture monitoring.
+
+Kräuter-WG/Kraeuter-WG is an open-source ESP32-based IoT irrigation system that automatically waters your plants based on live soil moisture data. No coding required – fully controllable via local web interface.
 
 Say goodbye to complex setups and hardcoded values in the Arduino IDE. Instead, enjoy a clean and responsive **Web UI** hosted directly on your local network. You can easily configure sensor thresholds, control your water pumps, and set up logical "Smart Rules" right from your smartphone browser.
 
